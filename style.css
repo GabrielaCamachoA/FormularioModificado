@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+body{
+    background-color: #edede9;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    margin: 1pc;
+    display: flex;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 6px 0px #689a8d;
+    max-width: 650px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./img/fondoUser.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    overflow: hidden;
+    flex-basis: 216px;
+    flex-grow: 1;
+}
+.imagen p{
+    color: #fff;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 0.9;
+    margin: 30px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #a2599bc9;
+}
+.form{
+    padding: 22px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 170px;
+    flex-grow: 1;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+input{
+    border-radius: 4px;
+    border: 1px solid #4e7eb0;
+    padding: 4px 10px;
+    margin-top: -4px;
+}
+input:focus{
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+button[type="button"]{
+    border-radius: 4px;
+    border: none;
+    padding: 4px 10px;
+    background-color: #4e7eb0;
+    color: #fff;
+    transition: .2s;
+}
+button[type="button"]:hover{
+    background-color: #37608b;
+    text-shadow: 1px 1px 2px pink;
+    transform: scale(0.9);
+}
+button[type="submit"]{
+    border-radius: 4px;
+    border: none;
+    padding: 4px 10px;
+    background-color: #a6629f;
+    color: #fff;
+    transition: 0.2s;
+}
+button[type="submit"]:hover{
+    background-color: #8a4e84;
+    text-shadow: 1px 1px 2px pink;
+    transform: scale(0.9);
+}
+#foto{
+    display: none;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.h1Perfil{
+    color: #a6629f;
+    text-align: center;
+}
